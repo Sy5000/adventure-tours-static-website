@@ -1,7 +1,7 @@
 export default function Nav() {
   return (
     <nav className="container">
-      <div className="nav-bar">
+      <div className="nav-bar padding-m">
         <div>
           <p>Adventure Tours</p>
         </div>

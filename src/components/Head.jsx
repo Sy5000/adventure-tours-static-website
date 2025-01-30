@@ -4,7 +4,13 @@ export default function Header() {
   return (
     <header className="header">
       <Nav />
-      <h1>header component</h1>
+      <div className="container">
+        <div className="hero-text padding-m">
+          <h1>Adventure Tours</h1>
+          <p>feed your wunderlust</p>
+          <button>find out more</button>
+        </div>
+      </div>
     </header>
   );
 }

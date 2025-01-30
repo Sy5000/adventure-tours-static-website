@@ -2,28 +2,81 @@
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 // Homepage 
-
 */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0px;
   padding: 0px;
   justify-content: center;
+  height: 100%;
 }
+
 .container {
-  width: 1280px;
+  max-width: 1280px;
   margin: auto;
+}
+/* 
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+// Utility
+*/
+
+.padding-m {
+  padding: 0.75rem;
+}
+
+/* 
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+// Header Component
+*/
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./assets/vanl-life.jpg");
+  /* Position and center the image to scale nicely on all screens */
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 33%;
+  left: auto;
+}
+/* 
+////////////////////////////
+// Responsive 
+//
+////////////////////////////
+*/
+
+/* tab */
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 550px;
+  }
+}
+/* desktop */
+@media only screen and (min-width: 1200px) {
+  .header {
+    height: 750px;
+  }
 }
 
 /* 
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 // Nav Component
-
 */
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
