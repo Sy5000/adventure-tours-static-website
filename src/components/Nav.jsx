@@ -3,7 +3,7 @@ export default function Nav() {
     <nav className="container">
       <div className="nav-bar padding-m">
         <div>
-          <p>Adventure Tours</p>
+          <p>logo</p>
         </div>
         <ul className="nav-links flex">
           <li>About Us</li>
@@ -11,6 +11,7 @@ export default function Nav() {
           <li>Testimonials</li>
           <li>Blog</li>
         </ul>
+        <div></div>
       </div>
     </nav>
   );

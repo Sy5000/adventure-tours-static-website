@@ -1,0 +1,9 @@
+.container {
+  outline: 2px red solid;
+}
+.slide {
+  padding: 2rem;
+  background-color: aqua;
+  justify-content: center;
+  text-align: center;
+}

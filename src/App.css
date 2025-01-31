@@ -20,14 +20,24 @@ body {
   max-width: 1280px;
   margin: auto;
 }
+
+button {
+  margin: 2rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.5rem;
+  background-color: #e7961d;
+  border: none;
+}
 /* 
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 // Utility
 */
-
+.display-l {
+  font-size: 48px;
+}
 .padding-m {
-  padding: 0.75rem;
+  padding: 1.5rem;
 }
 
 /* 
@@ -81,6 +91,7 @@ body {
   display: flex;
   justify-content: space-between;
   z-index: 1;
+  align-items: center;
 }
 .nav-links {
   list-style: none;
@@ -88,7 +99,12 @@ body {
   display: flex;
 }
 .nav-links > li {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
+}
+ul {
+  padding: 0.75rem;
+  border: 1px solid white;
+  border-radius: 1.5rem;
 }
 
 /* 

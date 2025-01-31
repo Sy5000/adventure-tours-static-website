@@ -6,16 +6,19 @@ import "./App.css";
 import Header from "./components/Head";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
-// 3rd party
+// mantine
+import "@mantine/core/styles.css";
+import { MantineProvider } from "@mantine/core";
+import "@mantine/carousel/styles.css";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Testimonials />
-
-      <Footer />
-    </>
+    <MantineProvider>
+      <>
+        <Header />
+        <Testimonials />
+      </>
+    </MantineProvider>
   );
 }
 
