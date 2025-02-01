@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 // custom
 import Header from "./components/Head";
+import Articles from "./components/Articles";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 // mantine
@@ -16,7 +17,9 @@ function App() {
     <MantineProvider>
       <>
         <Header />
+        <Articles />
         <Testimonials />
+        <Footer />
       </>
     </MantineProvider>
   );

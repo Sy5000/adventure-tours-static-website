@@ -2,8 +2,41 @@
   outline: 2px red solid;
 }
 .slide {
-  padding: 2rem;
-  background-color: aqua;
-  justify-content: center;
+  display: flex;
+  background-color: lightgrey;
+}
+.indicator {
+  height: 10px;
+  background-color: red;
+  transition: width 250ms ease;
+
+  &[data-active] {
+    width: 20px;
+  }
+}
+.title {
+  background-color: lightgray;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+.review {
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.reviewer {
+  margin-top: 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
   text-align: center;
 }

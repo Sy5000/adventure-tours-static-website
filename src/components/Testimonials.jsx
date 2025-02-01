@@ -3,31 +3,33 @@ import { Carousel, CarouselSlide } from "@mantine/carousel";
 // custom styles
 import classes from "./Testimonials.module.css";
 // fetch data
-import testimonialData from "../data.js";
+import data from "../data.js";
 
 export default function Testimonials() {
-  // map data
-  const testimonials = testimonialData.map((testimonial) => {
+  // map data (data = array of various different app data objects)
+  const testimonials = data.testimonials.map((testimonial) => {
     return (
       <Carousel.Slide
         classNames={{ slide: classes.slide }}
         key={testimonial.id}
       >
-        <h5>Testimonials</h5>
-        <p>{testimonial.review}</p>
-        <p>{testimonial.name}</p>
-        <p>{testimonial.country}</p>
+        <p className={classes.review}>{testimonial.review}</p>
+        <div className={classes.reviewer}>
+          <p>{testimonial.name}</p>
+          <p>{testimonial.country}</p>
+        </div>
       </Carousel.Slide>
     );
   });
-
+  // render slides in carousel
   return (
     <>
-      <Carousel withIndicators height={200} loop>
+      <div className={classes.title}>
+        <h6> &#91; Testimonial &#93;</h6>
+      </div>
+      <Carousel height={200} classNames={classes} loop>
         {testimonials}
       </Carousel>
     </>
   );
 }
-
-// just use map???
