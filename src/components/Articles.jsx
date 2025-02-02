@@ -8,7 +8,9 @@ import data from "../data.js";
 export default function Articles() {
   // map data (data = array of various different app data objects)
   const articles = data.articles.map((article) => {
-    return <Article title={article.title} text={article.text} />;
+    return (
+      <Article img={article.img} title={article.title} text={article.text} />
+    );
   });
 
   //   console.log("debug >", articles);

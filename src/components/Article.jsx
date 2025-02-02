@@ -4,17 +4,12 @@ import classes from "./Articles.module.css";
 export default function Article(props) {
   return (
     <article className={classes.card}>
-      <img
-        src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg"
-        alt="Hot air balloons"
-      />
-      <header>
+      <img src={props.img.src} alt={props.img.alt} />
+      <div className={classes.textContent}>
         <h4>{props.title}</h4>
-      </header>
-      <div>
-        <p>{props.text}</p>
+        <p className={classes.body}>{props.text}</p>
       </div>
-      <footer>link</footer>
+      <footer className={classes.footer}>link to Article &#11157;</footer>
     </article>
   );
 }
